@@ -4,9 +4,14 @@ let $container = document.querySelector(".container");
 const $total = document.querySelector(".total");
 const $content = document.querySelector(".content");
 const $inner = document.createElement("div");
-// const $inPut = document.querySelector(".input");
+const $img = document.querySelector(".fa-magnifying-glass");
+const $header = document.querySelector("header");
 let timeout;
-
+const $inputbox = document.createElement("div");
+$inputbox.setAttribute("class", "input--box");
+$inputbox.append($input, $img);
+console.log($inputbox);
+$header.append($inputbox);
 let imageArray = [];
 let imageCount = 0;
 let totalImage = 0;
@@ -69,7 +74,7 @@ const onInput = async function (e) {
       const $imgplot = document.createElement("p");
       const $imgPoster = document.createElement("img");
       const $hiddendiv = document.createElement("div");
-      const $header = document.createElement("header");
+
       $hiddendiv.setAttribute("class", "list--div");
       li.append(img);
       li.append($div);

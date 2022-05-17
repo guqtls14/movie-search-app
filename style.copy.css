@@ -12,12 +12,15 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+.input--box {
   position: relative;
+  width: 50%;
 }
 .input i {
   position: absolute;
-  right: 370px;
-  top: 90px;
+  right: 10px;
+  top: 15px;
 }
 .input span {
   font-size: 62px;
@@ -27,7 +30,7 @@ body {
   margin-top: 9px;
   padding: 5px;
   border-radius: 12px;
-  width: 720px;
+  width: 100%;
   font-size: 40px;
   /* margin-right: 80px; */
 }
